@@ -1,0 +1,132 @@
+---
+import Layout from '../layouts/Layout.astro'
+---
+
+<Layout title='Twenty One Pilots'>
+	<div class="found grid place-content-center py-5 px-12">
+		<section class="description-container">
+			<p>Twenty Øne Piløts es un dúo musical estadounidense originario de Columbus, Ohio. La banda fue formada en 2009 por Tyler Joseph junto con Nick Thomas y Chris Salih, quienes posteriormente abandonaron la banda en 2011. Tyler Joseph es el vocalista principal y toca el piano, bajo, guitarra y ukelele, entre otros instrumentos, mientras que Josh Dun toca la batería y la trompeta. La banda ha lanzado siete álbumes de estudio, siendo el más reciente Clancy, lanzado en mayo de 2024.
+			</p>
+		</section>
+		<section class="grid place-items-center grid-cols-3">
+			<p class="artist-letter-container">josh dun</p>
+            <div class="artist-image-container">
+				<img src="/images/artists.webp" alt="artists" />
+			</div>
+            <p class="artist-letter-container">tyler joseph</p>
+		</section>
+		<section class="video-container grid place-items-center my-8">
+			<p>lanzamiento del nuevo álbum</p>
+            <iframe
+				src="https://www.youtube.com/embed/rR3_slOc-1U"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen
+			></iframe>
+		</section>
+		<section class="listen-container grid place-items-center">
+            <p>disponible en</p>
+			<div class="grid grid-cols-3 gap-5 mt-5">
+				<div class="music-service-container justify-start">
+                    <a
+                        href="https://open.spotify.com/artist/3YQKmKGau1PzlVlkL1iodx"
+                        target="_blank"
+                    >
+                        <img src="/images/spotify-logo.webp" alt="spotify" />
+                    </a>
+                    <p>spotify</p>
+                </div>
+                <div class="music-service-container" >
+                    <a
+                    href="https://music.apple.com/us/artist/twenty-one-pilots/349736311"
+                    target="_blank"
+                    >
+                        <img src="/images/apple-music-logo.webp" alt="apple music" />
+                    </a>
+                    <p>apple music</p>
+                </div>
+                <div class="music-service-container justify-end">
+                    <a  
+                    href="https://www.youtube.com/channel/UCBQZwaNPFfJ1gZ1fLZpAEGw"
+                    target="_blank"
+                    >
+                        <img src="/images/youtube-logo.webp" alt="youtube" />
+                    </a>
+                    <p>youtube</p>
+                </div>
+			</div>
+		</section>
+	</div>
+</Layout>
+<style>
+	.found{
+        background-image: url("images/background.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+	.description-container{
+		background-color: rgba(0, 0, 0, 0.5);
+		color: white;
+		padding: 20px;
+		border-radius: 10px;
+		text-align: center;
+        font-family: "font-top";
+        margin-bottom: 50px;
+	}
+	.artist-letter-container{
+        text-align: center;
+        width: calc(50px + 8vw);
+		font-size: calc(16px + 2vw);
+		color: white;
+		font-weight: bold;
+        font-family: "font-atomic";
+	}
+	.artist-image-container{
+		min-width: 150px;
+	}
+	
+	.music-service-container{
+        display: grid;
+        place-items: center;
+        row-gap: calc(12px + 1vw);
+        transition:all ease-in-out;
+        animation-duration: 1.5s;
+    }
+
+    .video-container p {
+        font-size: calc(16px + 2vw);
+        color: white;
+        font-weight: bold;
+        font-family: "font-atomic";
+        margin: 12px 0px;
+    }
+
+    .video-container iframe{
+        width: calc(300px + 10vw);
+        height: calc(200px + 5vw);
+    }
+
+    .listen-container p{
+        font-size: calc(16px + 2vw);
+        color: white;
+        font-weight: bold;
+        font-family: "font-atomic";
+        margin: 12px 0px;
+    }
+
+    .music-service-container p{
+        font-size: calc(12px + 1vw);
+        color: white;
+        font-weight: bold;
+        font-family: "font-atomic";
+    }
+
+    .music-service-container img{
+        width: calc(50px + 2vw);
+        transition: all 300ms;
+    }
+
+    .music-service-container img:hover{
+        transform: scale(1.15);
+    }
+</style>

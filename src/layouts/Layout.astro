@@ -1,0 +1,62 @@
+---
+interface Props {
+    title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+</head>
+<body>
+    <header class="w-full bg-[#e03d2e] grid place-items-center">
+        <div class="scale-75">
+            <img src="images/logo-top.webp" alt="logo">
+        </div>
+        <div class="w-full flex">
+            <a class="route w-1/4" href="../">INICIO</a>
+            <a class="route w-1/4" href="discografia">DISCOS</a>
+            <a class="route w-1/4" href="tours">TOURS</a>
+            <a class="route w-1/4" href="clique">CLIQUE</a>
+        </div>
+    </header>
+    <slot/>
+</body>
+</html>
+
+<style>
+    .route{
+        background-color: black;
+        color: #e03d2e;
+        font-weight: bold;
+        text-align: center;
+        font-size: 20px;
+        transition: all 0.3s;
+        padding: 10px 0px;
+    }
+    .route:hover{
+        background-color: #e03d2e;
+        color: #ffd800;
+    }
+
+    @font-face {
+        font-family: font-top;
+        src: url("../../public/fonts/font-top.ttf");
+    }
+
+    @font-face {
+        font-family: font-atomic;
+        src: url("../../public/fonts/font-atomic.ttf");
+    }
+</style>
+
