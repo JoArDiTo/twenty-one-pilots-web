@@ -1,12 +1,33 @@
 ---
 import Layout from '../layouts/Layout.astro'
+import api from '../api/api.json'
 ---
 
 <Layout title='Twenty One Pilots'>
-	<h1>Aquí va sus discos</h1>
+    <div class="text-white px-4 py-8 grid place-items-center grid-cols-1">
+        <section class="disks-container grid place-items-center grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
+				{api.discos.map((disco) => (
+					<div class="disk-container grid place-items-center p-3 m-6">
+						<a class="w-[320px] h-[320px]" href={`/discografia/${disco.id}`}>
+							<img class="w-full h-full object-cover rounded-2xl transition-all duration-300 hover:scale-105" src={disco.url_imagen} alt={disco.nombre} />
+						</a>
+						<p class="text-format text-[36px] mt-5">{disco.nombre}</p>
+					</div>
+				))}
+        </section>
+    </div>
 </Layout>
+
 <style>
-	h1 {
-		color: black;
-	}
+    .text-format {
+        font-family: "font-atomic";
+    }
+    .disks-container {
+        
+    }
+    .disk-container {
+        width: 360px;
+		height: 360px;
+		object-fit: cover;
+    }
 </style>

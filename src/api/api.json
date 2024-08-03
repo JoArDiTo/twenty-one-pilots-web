@@ -1,0 +1,343 @@
+
+{
+    "discos":[
+        {
+            "id": "1",
+            "nombre": "twenty one pilots",
+            "descripcion":"Twenty One Pilots es el álbum debut de la banda estadounidense, lanzado el 29 de diciembre de 2009. El álbum fue lanzado en formato digital y físico, y fue producido por Greg Wells. El álbum fue precedido por el sencillo «Implicit Demand for Proof».",
+            "url_spotify": "https://open.spotify.com/album/1Fexc96V24RL17Ko9VXUOM?si=dAQ1E-D3QImvFVY5VY5FtQ",
+            "url_imagen": "/images/discos/alb-top.webp",
+            "songs":[
+                "Implicit Demand for Proof",
+                "Fall Away",
+                "The Pantaloon",
+                "Addict with a Pen",
+                "Friend, Please",
+                "March to the Sea",
+                "Johnny Boy",
+                "Oh Ms Believer",
+                "Air Catcher",
+                "Trapdoor",
+                "A Car, a Torch, a Death",
+                "Taxi Cab",
+                "Before You Start Your Day",
+                "Isle of Flightless Birds"
+            ]
+        },
+        {
+            "id": "2",
+            "nombre": "regional at best",
+            "descripcion":"Regional at Best es el segundo álbum de estudio de la banda estadounidense, lanzado el 8 de julio de 2011. El álbum fue lanzado en formato digital y físico, y fue producido por Tyler Joseph y Greg Wells. El álbum fue precedido por los sencillos «Glowing Eyes» y «Lovely».",
+            "url_spotify": "https://open.spotify.com/playlist/5VSyNj9ZA7Mw9LB1BUuqUR?si=70d332bc85b54ec8",
+            "url_imagen": "/images/discos/alb-regional.webp",
+            "songs":[
+                "Glowing Eyes",
+                "Ruby",
+                "Forest",
+                "Lovely",
+                "Kitchen Sink",
+                "Anathema",
+                "Be Concerned",
+                "Slowtown",
+                "Clear"
+            ]
+        },
+        {
+            "id": "3",
+            "nombre": "vessel",
+            "url_spotify": "https://open.spotify.com/intl-es/album/2r2r78NE05YjyHyVbVgqFn?si=j12oDuyFRKanEXhgtXaH_A",
+            "url_imagen": "/images/discos/alb-vessel.webp",
+            "descripcion":"Vessel es el tercer álbum de estudio de la banda estadounidense. Fue lanzado el 8 de enero de 2013 a través de Fueled by Ramen y Elektra Music Group. El álbum fue producido por Greg Wells y Tyler Joseph. El álbum fue precedido por los sencillos «Holding on to You» y «Car Radio».",
+            "songs":[
+                "Ode to Sleep",
+                "Holding on to You",
+                "Migraine",
+                "House of Gold",
+                "Car Radio",
+                "Semi-Automatic",
+                "Screen",
+                "The Run and Go",
+                "Fake You Out",
+                "Guns for Hands",
+                "Trees",
+                "Truce"
+            ]
+        },
+        {
+            "id": "4",
+            "nombre": "blurryface",
+            "descripcion":"Blurryface es el cuarto álbum de estudio de la banda estadounidense. Fue lanzado el 17 de mayo de 2015 a través de Fueled by Ramen y Elektra Music Group. El álbum fue producido por Mike Elizondo, Ricky Reed y Tyler Joseph. El álbum fue precedido por los sencillos «Fairly Local», «Tear in My Heart» y «Stressed Out».",
+            "url_spotify": "https://open.spotify.com/intl-es/album/3cQO7jp5S9qLBoIVtbkSM1?si=XJ8L5mG5TlaOYowjYK670Q",
+            "url_imagen": "/images/discos/alb-blurry.webp",
+            "songs":[
+                "Heavydirtysoul",
+                "Stressed Out",
+                "Ride",
+                "Fairly Local",
+                "Tear in My Heart",
+                "Lane Boy",
+                "The Judge",
+                "Doubt",
+                "Polarize",
+                "We Don't Believe What's on TV",
+                "Message Man",
+                "Hometown",
+                "Not Today",
+                "Goner"
+            ]
+        },
+        {
+            "id": "5",
+            "nombre": "trench",
+            "descripcion":"Trench es el quinto álbum de estudio de la banda estadounidense. Fue lanzado el 5 de octubre de 2018 a través de Fueled by Ramen y Elektra Music Group. El álbum fue producido por el vocalista Tyler Joseph y Paul Meany de la banda de rock alternativo Mutemath. El álbum fue precedido por los sencillos «Jumpsuit», «Nico and the Niners» y «Levitate».",
+            "url_spotify": "https://open.spotify.com/intl-es/album/621cXqrTSSJi1WqDMSLmbL?si=WWWXsP89T4-zCblZMtxJrQ",
+            "url_imagen": "/images/discos/alb-trench.webp",
+            "songs":[
+                "Jumpsuit",
+                "Levitate",
+                "Morph",
+                "My Blood",
+                "Chlorine",
+                "Smithereens",
+                "Neon Gravestones",
+                "The Hype",
+                "Nico and the Niners",
+                "Cut My Lip",
+                "Bandito",
+                "Pet Cheetah",
+                "Legend",
+                "Leave the City"
+            ]
+        },
+        {
+            "id": "6",
+            "nombre": "scaled and icy",
+            "descripcion":"Scaled and Icy es el sexto álbum de estudio de la banda estadounidense. Fue lanzado el 21 de mayo de 2021 a través de Fueled by Ramen y Elektra Music Group. El álbum fue producido por el vocalista Tyler Joseph y Paul Meany de la banda de rock alternativo Mutemath. El álbum fue precedido por los sencillos «Shy Away» y «Choker».",
+            "url_spotify": "https://open.spotify.com/album/0Q5XBpCYFgUWiG9DUWyAmJ?si=nKEQZjkyQn-KJ6d6ajUtYA",
+            "url_imagen": "/images/discos/alb-scaled.webp",
+            "songs":[
+                "Good Day",
+                "Choker",
+                "Shy Away",
+                "The Outside",
+                "Saturday",
+                "Never Take It",
+                "Mulberry Street",
+                "Formidable",
+                "Bounce Man",
+                "No Chances",
+                "Redecorate"
+            ]
+        },
+        {
+            "id": "7",
+            "nombre": "clancy",
+            "descripcion":"Clancy es el séptimo álbum de estudio de la banda estadounidense. Fue lanzado el 15 de agosto de 2024 a través de Fueled by Ramen y Elektra Music Group. El álbum fue producido por el vocalista Tyler Joseph y Paul Meany de la banda de rock alternativo Mutemath. El álbum fue precedido por los sencillos «Overcompensate» y «Next Semester».",
+            "url_spotify": "https://open.spotify.com/intl-es/album/7aeIwIg63Qyt1bzjsPufzl?si=08DbPTGNTe2JH7wC7j3upA",
+            "url_imagen": "/images/discos/alb-clancy.webp",
+            "songs":[
+                "Overcompensate",
+                "Next Semester",
+                "Backslide",
+                "Midwest Indigo",
+                "Routines In The Night",
+                "Vignette",
+                "The Craving (Jenna's version)",
+                "Lavish",
+                "Navigating",
+                "Snap Back",
+                "Oldies Station",
+                "At The Risk Of Feeling Dumb",
+                "Paladin Strait"
+            ]
+        }
+    ],
+    "tours":[
+        {
+            "name": "Regional at Best Tour",
+            "dates": [
+                {
+                    "start": "2011-10-17",
+                    "end": "2011-12-30",
+                    "city": "Columbus",
+                    "country": "USA"
+                }
+            ],
+            "year": 2011
+        },
+        {
+            "name": "Quiet Is Violent World Tour",
+            "dates": [
+                {
+                    "start": "2014-09-04",
+                    "end": "2014-11-19",
+                    "city": "Columbus",
+                    "country": "USA"
+                },
+                {
+                    "start": "2014-11-24",
+                    "end": "2014-11-30",
+                    "city": "London",
+                    "country": "UK"
+                }
+            ],
+            "year": 2014
+        },
+        {
+            "name": "Blurryface Tour",
+            "dates": [
+                {
+                    "start": "2015-09-08",
+                    "end": "2015-11-19",
+                    "city": "Washington, D.C.",
+                    "country": "USA"
+                },
+                {
+                    "start": "2016-02-19",
+                    "end": "2016-03-12",
+                    "city": "Sydney",
+                    "country": "Australia"
+                },
+                {
+                    "start": "2016-04-01",
+                    "end": "2016-05-22",
+                    "city": "Stockholm",
+                    "country": "Sweden"
+                },
+                {
+                    "start": "2016-06-28",
+                    "end": "2016-08-10",
+                    "city": "Minneapolis",
+                    "country": "USA"
+                }
+            ],
+            "year": 2015
+        },
+        {
+            "name": "Emotional Roadshow World Tour",
+            "dates": [
+                {
+                    "start": "2016-05-31",
+                    "end": "2016-08-10",
+                    "city": "Cincinnati",
+                    "country": "USA"
+                },
+                {
+                    "start": "2016-11-02",
+                    "end": "2016-11-20",
+                    "city": "Glasgow",
+                    "country": "UK"
+                },
+                {
+                    "start": "2017-03-17",
+                    "end": "2017-04-08",
+                    "city": "Auckland",
+                    "country": "New Zealand"
+                },
+                {
+                    "start": "2017-06-16",
+                    "end": "2017-06-30",
+                    "city": "Copenhagen",
+                    "country": "Denmark"
+                },
+                {
+                    "start": "2017-10-20",
+                    "end": "2017-11-04",
+                    "city": "New York",
+                    "country": "USA"
+                }
+            ],
+            "year": 2016
+        },
+        {
+            "name": "The Bandito Tour",
+            "dates": [
+                {
+                    "start": "2018-10-16",
+                    "end": "2018-11-21",
+                    "city": "Nashville",
+                    "country": "USA"
+                },
+                {
+                    "start": "2019-01-30",
+                    "end": "2019-03-17",
+                    "city": "Kiev",
+                    "country": "Ukraine"
+                },
+                {
+                    "start": "2019-06-04",
+                    "end": "2019-06-30",
+                    "city": "Melbourne",
+                    "country": "Australia"
+                },
+                {
+                    "start": "2019-09-13",
+                    "end": "2019-11-09",
+                    "city": "Cleveland",
+                    "country": "USA"
+                }
+            ],
+            "year": 2018
+        },
+        {
+            "name": "Takeover Tour",
+            "dates": [
+                {
+                    "start": "2021-09-21",
+                    "end": "2021-12-09",
+                    "city": "Denver",
+                    "country": "USA"
+                },
+                {
+                    "start": "2022-06-17",
+                    "end": "2022-07-17",
+                    "city": "Cork",
+                    "country": "Ireland"
+                }
+            ],
+            "year": 2021
+        },
+        {
+            "name": "Icy Tour",
+            "dates": [
+                {
+                    "start": "2022-09-16",
+                    "end": "2022-11-19",
+                    "city": "St. Louis",
+                    "country": "USA"
+                }
+            ],
+            "year": 2022
+        },
+        {
+            "name":"The Clancy World Tour",
+            "dates":[
+                {
+                    "start": "2024-08-15",
+                    "end": "2024-10-12",
+                    "city": "Colorado",
+                    "country": "USA - Canada"
+                },
+                {
+                    "start": "2024-11-17",
+                    "end": "2024-11-24",
+                    "city": "Auckland",
+                    "country": "New Zealand - Australia"
+                },
+                {
+                    "start": "2025-01-16",
+                    "end": "2025-02-24",
+                    "city": "Bogotá",
+                    "country": "LATAM"
+                },
+                {
+                    "start": "2025-04-07",
+                    "end": "2025-05-14",
+                    "city": "Hamburg",
+                    "country": "Europe - UK"
+                }
+            ],
+            "year":2024
+        }
+    ]
+}
