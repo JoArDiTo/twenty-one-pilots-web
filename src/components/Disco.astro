@@ -1,0 +1,36 @@
+---
+// Disco.astro
+interface Props {
+  id: string;
+  nombre: string;
+  url_imagen: string;
+}
+
+const { id, nombre, url_imagen } = Astro.props;
+---
+
+<div class="disk-container grid place-items-center px-3 py-2">
+  <a 
+    class="w-[150px] h-[150px] sm:w-[200px] sm:h-[200px] md:w-[230px] md:h-[230px] 2xl:w-[320px] 2xl:h-[320px] block"
+    href={`/discografia/${id}`}>
+    <img class="w-full h-full object-cover rounded-2xl transition-all duration-300 hover:scale-105" src={url_imagen} alt={nombre} />
+  </a>
+  <p class="text-format animate-color-change text-center text-[16px] sm:text-[20px] md:text-[24px] 2xl:text-[32px] mt-2">{nombre}</p>
+</div>
+
+<style>
+  @keyframes color-change {
+    0%, 100%{
+      color: black;
+      scale: 1.1;
+    }
+    50% {
+      color: white;
+      scale: 1;
+    }
+  }
+  
+  .animate-color-change {
+    animation: color-change 2.5s infinite;
+  }
+  </style>

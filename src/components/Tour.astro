@@ -1,0 +1,30 @@
+---
+interface Date {
+    start: string
+    end: string
+    city: string
+    country: string
+}
+
+interface Props {
+    name: string
+    dates: Date[]
+    year: number
+}
+
+const { name, dates, year } = Astro.props
+---
+
+<div class="tour-container p-6 m-4 bg-gray-800 bg-opacity-80 rounded-lg shadow-lg text-white">
+    <h2 class="text-2xl md:text-3xl font-bold mb-4 text-center">{name} ({year})</h2>
+    <ul class="tour-dates space-y-4">
+    {dates.map((date) => (
+        <li class="tour-date bg-gray-700 p-4 rounded-md hover:bg-gray-600 hover:shadow-xl transition duration-300">
+            <p class="text-lg font-semibold">{date.city}, {date.country}</p>
+            <p class="text-sm">Desde: {new Date(date.start).toLocaleDateString()}</p>
+            <p class="text-sm">Hasta: {new Date(date.end).toLocaleDateString()}</p>
+        </li>
+        ))
+    }
+    </ul>
+</div>

@@ -1,54 +1,77 @@
 ---
+// Importaciones necesarias
 import Layout from '../../layouts/Layout.astro'
 import api from '../../api/api.json'
 
+// Obtén el parámetro ID
 const { id } = Astro.params;
 
-let disk = null
+let disk = null;
 if (id) {
     disk = api.discos.find((disco) => disco.id === id);
 }
 ---
 
-<Layout title='Twenty One Pilots'>
+<Layout title={disk ? disk.nombre : 'Disco no encontrado'}>
     <div class="container mx-auto p-4">
-        { disk ? 
-            (
-                <section class="grid place-items-center bg-slate-300 bg-opacity-75 rounded-lg px-12 py-6">
-                    <p class="text-font text-2xl sm:text-[36px] pt-2 pb-8">"{disk.nombre}"</p>
-                    <div class="grid place-items-center grid-cols-1 xl:grid-cols-2">
-                        <div class="w-[320px] h-[320px] pb-5">
-                            <img class="w-full h-full object-cover" src={disk.url_imagen} alt=""/>
+        {disk ? (
+            <section class="grid gap-6 bg-gray-900 bg-opacity-80 text-white rounded-lg p-8 shadow-lg">
+                <p class="text-format text-center text-3xl sm:text-4xl md:text-5xl mb-6">"{disk.nombre}"</p>
+                <div class="grid grid-cols-1 xl:grid-cols-2 gap-8">
+                    <div class="relative w-full h-[320px] md:h-[400px]">
+                        <img class="w-full h-full object-cover rounded-2xl shadow-lg" src={disk.url_imagen} alt={disk.nombre} />
+                    </div>
+                    <div class="text-lg md:text-xl leading-relaxed">
+                        <p>{disk.descripcion}</p>
+                        <div class={`flex gap-2 mt-4 ${parseInt(disk.id) > 1 && parseInt(disk.id) < 7 ? 'justify-between' : parseInt(disk.id) > 1 ? 'justify-start' : 'justify-end'}`}>
+                            {parseInt(disk.id) > 1 && (
+                                <a 
+                                    class="text-lg sm:text-xl text-center py-2 px-4 bg-gray-700 hover:bg-gray-600 rounded-lg transition duration-300 ease-in-out"
+                                    href={`/discografia/${parseInt(disk.id) - 1}`}
+                                >
+                                    DISCO ANTERIOR
+                                </a>
+                            )}
+                            {parseInt(disk.id) < 7 && (
+                                <a 
+                                    class="text-lg sm:text-xl text-center py-2 px-4 bg-gray-700 hover:bg-gray-600 rounded-lg transition duration-300 ease-in-out"
+                                    href={`/discografia/${parseInt(disk.id) + 1}`}
+                                >
+                                    SIGUIENTE DISCO
+                                </a>
+                            )}
                         </div>
-                        <p class="text-xl sm:text-[22px] text-justify">{disk.descripcion}</p>
                     </div>
-                    <p class="text-font text-2xl sm:text-[48px] py-5">canciones</p>
-                    <div class="grid place-items-center">
-                        {disk.songs.map((song) => (
-                            <div class="grid place-items-center">
-                                <p class="text-xl sm:text-2xl">{song}</p>
-                            </div>
-                        ))}
-                    </div>
-                    <div class="grid place-items-center grid-cols-1 sm:grid-cols-2 py-5">
-                        <a class="text-font text-2xl sm:text-[40px] py-5 duration-300 hover:text-white" href="../discografia">volver</a>
-                        <a class="text-font text-center text-2xl sm:text-[40px] py-5 duration-300 hover:text-white" href={disk.url_spotify}>escuchar en spotify</a>
-                    </div>
-                </section>
-            ) : (
-            <div class="grid place-items-center">
-			<p class="text-format text-sm sm:text-xl md:text-3xl text-white py-1 sm:py-3 md:py-5">página no dispobnible</p>
-			<div class="w-[175px] h-[100px] sm:w-[350px] sm:h-[200px] md:w-[700px] md:h-[400px]">
-				<img class="w-full h-full object-contain" src="/images/tyler-punch.webp" alt="tyler-punch"/>
-			</div>
-		</div>
-            )
-        }
+                </div>
+                <p class="text-format text-center text-2xl sm:text-3xl md:text-4xl my-6">canciones</p>
+                <ul class="grid gap-2 text-lg md:text-xl">
+                    {disk.songs.map((song) => (
+                        <li class="text-center py-2 px-4 bg-gray-800 rounded-lg hover:bg-gray-700">{song}</li>
+                    ))}
+                </ul>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
+                    <a 
+                        class="text-format text-2xl sm:text-3xl text-center py-4 px-6 bg-gray-700 hover:bg-gray-600 rounded-lg transition duration-300 ease-in-out"
+                        href="../discografia"
+                        >
+                            volver
+                    </a>
+                    <a 
+                        class="text-format text-2xl sm:text-3xl text-center py-4 px-6 bg-green-500 hover:bg-green-600 text-black rounded-lg transition duration-300 ease-in-out"
+                        href={disk.url_spotify}
+                        target="_blank"
+                        >
+                        escuchar en spotify
+                    </a>
+                </div>
+            </section>
+        ) : (
+            <div class="grid place-items-center text-white">
+                <p class="text-format text-xl sm:text-2xl md:text-3xl mb-4">página no disponible</p>
+                <div class="w-[350px] h-[200px] md:w-[700px] md:h-[400px]">
+                    <img class="w-full h-full object-contain" src="/images/tyler-punch.webp" alt="No disponible"/>
+                </div>
+            </div>
+        )}
     </div>
 </Layout>
-
-<style>
-    .text-font{
-        font-family: "font-atomic";
-    }
-</style>
