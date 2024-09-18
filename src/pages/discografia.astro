@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro'
 import api from '../api/api.json'
 import Disco from '../components/Disco.astro'
+const base = import.meta.env.BASE_URL;
 ---
 
 <Layout title='Twenty One Pilots'>
@@ -17,7 +18,7 @@ import Disco from '../components/Disco.astro'
 
 <style>
     .found{
-        background-image: url("/images/background-2.webp");
+        background-image: url("images/background-2.webp");
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;

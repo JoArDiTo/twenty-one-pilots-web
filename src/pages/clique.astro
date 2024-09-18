@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro'
+const base = import.meta.env.BASE_URL;
 ---
 
 <Layout title='Twenty One Pilots'>
@@ -7,7 +8,7 @@ import Layout from '../layouts/Layout.astro'
 		<div class="grid place-items-center">
 			<p class="text-format text-sm sm:text-xl md:text-3xl text-white py-1 sm:py-3 md:py-5">próximamente el clique</p>
 			<div class="w-[175px] h-[100px] sm:w-[350px] sm:h-[200px] md:w-[700px] md:h-[400px]">
-				<img class="w-full h-full object-contain" src="/images/tyler-punch.webp" alt="tyler-punch"/>
+				<img class="w-full h-full object-contain" src={`${base}/images/tyler-punch.webp`} alt="tyler-punch"/>
 			</div>
 		</div>
 	</div>
