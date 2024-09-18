@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro'
 import api from '../../api/api.json'
 const base = import.meta.env.BASE_URL;
+console.log(base)
 
 export async function getStaticPaths(){
     const disks = api.discos;
@@ -37,7 +38,7 @@ const { id, slug, nombre, descripcion, url_imagen, songs, url_spotify } = disk
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
                 <a 
                     class="text-format text-2xl sm:text-3xl text-center py-4 px-6 bg-gray-700 hover:bg-gray-600 rounded-lg transition duration-300 ease-in-out"
-                    href="../discografia"
+                    href={`${base}/discografia`}
                     >
                         volver
                 </a>
