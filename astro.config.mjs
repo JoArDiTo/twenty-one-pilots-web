@@ -6,6 +6,6 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   integrations: [tailwind()],
   output: 'static',
-  site: 'https://JoArDiTo.github.io/twenty-one-pilots-web',
-  base: '/twenty-one-pilots-web/',
+  site: 'https://JoArDiTo.github.io',
+  base: '/twenty-one-pilots-web',
 });
