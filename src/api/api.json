@@ -2,7 +2,8 @@
 {
     "discos":[
         {
-            "id": "1",
+            "id": 1,
+            "slug": "twenty-one-pilots",
             "nombre": "twenty one pilots",
             "descripcion":"Twenty One Pilots es el álbum debut de la banda estadounidense, lanzado el 29 de diciembre de 2009. El álbum fue lanzado en formato digital y físico, y fue producido por Greg Wells. El álbum fue precedido por el sencillo «Implicit Demand for Proof».",
             "url_spotify": "https://open.spotify.com/album/1Fexc96V24RL17Ko9VXUOM?si=dAQ1E-D3QImvFVY5VY5FtQ",
@@ -25,7 +26,8 @@
             ]
         },
         {
-            "id": "2",
+            "id": 2,
+            "slug": "regional-at-best",
             "nombre": "regional at best",
             "descripcion":"Regional at Best es el segundo álbum de estudio de la banda estadounidense, lanzado el 8 de julio de 2011. El álbum fue lanzado en formato digital y físico, y fue producido por Tyler Joseph y Greg Wells. El álbum fue precedido por los sencillos «Glowing Eyes» y «Lovely».",
             "url_spotify": "https://open.spotify.com/playlist/5VSyNj9ZA7Mw9LB1BUuqUR?si=70d332bc85b54ec8",
@@ -43,7 +45,8 @@
             ]
         },
         {
-            "id": "3",
+            "id": 3,
+            "slug": "vessel",
             "nombre": "vessel",
             "url_spotify": "https://open.spotify.com/intl-es/album/2r2r78NE05YjyHyVbVgqFn?si=j12oDuyFRKanEXhgtXaH_A",
             "url_imagen": "/images/discos/alb-vessel.webp",
@@ -64,7 +67,8 @@
             ]
         },
         {
-            "id": "4",
+            "id": 4,
+            "slug": "blurryface",
             "nombre": "blurryface",
             "descripcion":"Blurryface es el cuarto álbum de estudio de la banda estadounidense. Fue lanzado el 17 de mayo de 2015 a través de Fueled by Ramen y Elektra Music Group. El álbum fue producido por Mike Elizondo, Ricky Reed y Tyler Joseph. El álbum fue precedido por los sencillos «Fairly Local», «Tear in My Heart» y «Stressed Out».",
             "url_spotify": "https://open.spotify.com/intl-es/album/3cQO7jp5S9qLBoIVtbkSM1?si=XJ8L5mG5TlaOYowjYK670Q",
@@ -87,7 +91,8 @@
             ]
         },
         {
-            "id": "5",
+            "id": 5,
+            "slug": "trench",
             "nombre": "trench",
             "descripcion":"Trench es el quinto álbum de estudio de la banda estadounidense. Fue lanzado el 5 de octubre de 2018 a través de Fueled by Ramen y Elektra Music Group. El álbum fue producido por el vocalista Tyler Joseph y Paul Meany de la banda de rock alternativo Mutemath. El álbum fue precedido por los sencillos «Jumpsuit», «Nico and the Niners» y «Levitate».",
             "url_spotify": "https://open.spotify.com/intl-es/album/621cXqrTSSJi1WqDMSLmbL?si=WWWXsP89T4-zCblZMtxJrQ",
@@ -110,7 +115,8 @@
             ]
         },
         {
-            "id": "6",
+            "id": 6,
+            "slug": "scaled-and-icy",
             "nombre": "scaled and icy",
             "descripcion":"Scaled and Icy es el sexto álbum de estudio de la banda estadounidense. Fue lanzado el 21 de mayo de 2021 a través de Fueled by Ramen y Elektra Music Group. El álbum fue producido por el vocalista Tyler Joseph y Paul Meany de la banda de rock alternativo Mutemath. El álbum fue precedido por los sencillos «Shy Away» y «Choker».",
             "url_spotify": "https://open.spotify.com/album/0Q5XBpCYFgUWiG9DUWyAmJ?si=nKEQZjkyQn-KJ6d6ajUtYA",
@@ -130,7 +136,8 @@
             ]
         },
         {
-            "id": "7",
+            "id": 7,
+            "slug": "clancy",
             "nombre": "clancy",
             "descripcion":"Clancy es el séptimo álbum de estudio de la banda estadounidense. Fue lanzado el 15 de agosto de 2024 a través de Fueled by Ramen y Elektra Music Group. El álbum fue producido por el vocalista Tyler Joseph y Paul Meany de la banda de rock alternativo Mutemath. El álbum fue precedido por los sencillos «Overcompensate» y «Next Semester».",
             "url_spotify": "https://open.spotify.com/intl-es/album/7aeIwIg63Qyt1bzjsPufzl?si=08DbPTGNTe2JH7wC7j3upA",
